@@ -13,9 +13,8 @@ baseline: spec
                 group: 'TravisCI' with: #('Tests').
 		spec
 			package: 'JSON' with: [ spec repository: 'http://www.squeaksource.com/JSON'];
-			project: 'Widgets' with: [ spec
-     						className: 'ConfigurationOfWidgets';
-     						versionString: #development;
-						loads: #('full');
-       					repository: 'http://www.hpi.uni-potsdam.de/hirschfeld/squeaksource/MetacelloRepository']
+			package: 'Signals' with: [
+				spec repository: 'github://marceltaeumel/signals:master/repository'];
+			package: 'Widgets' with: [
+				spec repository: 'github://hpi-swa/widgets:master/repository']
 	]
