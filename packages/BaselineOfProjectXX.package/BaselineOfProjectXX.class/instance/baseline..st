@@ -10,7 +10,7 @@ baseline: spec
 		spec baseline: 'Widgets' with: [
 				spec repository: 'github://hpi-swa/widgets:master/repository'].
             spec
-                package: 'ProjectXX-Core' with:[ spec requires: #('JSON', 'Widgets', 'Signals')];
+                package: 'ProjectXX-Core' with:[ spec requires: #('JSON' 'Widgets' 'Signals')];
                 package: 'ProjectXX-Tests' with: [ spec requires: #('ProjectXX-Core') ].
             spec
                 group: 'default' with: #('ProjectXX-Core');
