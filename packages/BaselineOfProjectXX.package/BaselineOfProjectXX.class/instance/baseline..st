@@ -2,11 +2,11 @@ baseline
 baseline: spec
     <baseline>
     spec
-        for: #'common'
+        for: #common
         do: [ 
 		spec package: 'JSON' with: [ spec repository: 'http://www.squeaksource.com/JSON'].
 		spec baseline: 'Signals' with: [
-				spec repository: 'github://hpi-swa/signals:master/repository'].
+				spec repository: 'github://marceltaeumel/signals:master/repository'].
 		spec baseline: 'Widgets' with: [
 				spec repository: 'github://hpi-swa/widgets:master/repository'].
             spec
