@@ -4,11 +4,10 @@ baseline: spec
     spec
         for: #'common'
         do: [ 
-		spec
-			package: 'JSON' with: [ spec repository: 'http://www.squeaksource.com/JSON'];
-			baseline: 'Signals' with: [
-				spec repository: 'github://hpi-swa/signals:master/repository'];
-			baseline: 'Widgets' with: [
+		spec package: 'JSON' with: [ spec repository: 'http://www.squeaksource.com/JSON'].
+		spec baseline: 'Signals' with: [
+				spec repository: 'github://hpi-swa/signals:master/repository'].
+		spec baseline: 'Widgets' with: [
 				spec repository: 'github://hpi-swa/widgets:master/repository'].
             spec
                 package: 'ProjectXX-Core' with:[ spec requires: #('JSON', 'Widgets', 'Signals')];
